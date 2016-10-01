@@ -1,14 +1,49 @@
+@import 'https://fonts.googleapis.com/css?family=Quicksand:400,700';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
 body {
   margin: 0px;
   padding: 0px;
+  /*height: 100%;*/
+  width: 100%;
+  background-color: #ff4646;
 }
 #spectra-gif {
   border: 1px solid black;
 }
-.data {
-  padding: 10px;
-  display: block;
+#header { 
+  margin-top: 3%;
+  line-height: 27px;
+  display: inline-block;
+  width: 100%
+  margin: 0 auto;
 }
+
+#title {
+  font-family: 'Open Sans', sans-serif;
+  font-style: 300;
+  color: white;
+  font-size: 75px;
+  margin: 0 auto;
+}
+
+#keck {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  color: white;
+  font-size: 25px;
+}
+
+
+.data {
+  font-family: 'Quicksand', sans-serif;
+  color: #4c4c4c;
+  padding: 10px;
+  background-color: white;
+  display: block;
+  -webkit-box-shadow: 1px 1px 1px 1px #404040;
+    box-shadow: 1px 1px 1px 1px #404040;
+}
+
 #ui {
   /*float: left;*/
   position: relative;

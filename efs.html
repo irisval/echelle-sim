@@ -7,6 +7,12 @@
 </head>
 <body>
 
+<div id="header">
+  <p id="title">Echelle Format Simulator</p>
+  <p id="keck">Keck Institute</p>
+</div>
+
+
 <div id='container' >    
   <div id="detector" onmousedown="drag=true;">
     <div id="draggable" >
@@ -23,15 +29,19 @@
 <div id="ui" >
 
   <div id="info" class="interface">
+    
+    <span id="Wavelength" class="data">Lambda</span> 
+    <br> 
     <span id="OrderNum" class="data">Order</span>
-    <span id="Wavelength" class="data">Lambda</span>
-    <span class="data"></span>
+    <br>
     <span id="EchelleAngle" class="data">Echelle Angle</span>
+    <br>
     <span id="CrossDisperserAngle" class="data">Cross Disperser Angle</span>
   </div>
 
   <div id="input" class="interface">
     <span id="FindLambda" class="data">Locate Wavelength: <input type="text" id="lambdainput" onchange="findLambdaLocation()"/></span>
+    <br>
     <span id="toggle" class="data" value="red">
       Zoom: <input type="range" id="zoom" min="4" max="14" value="9" onchange="update()"/>
       <input id="toggleColorRed" onClick="tog('red')" type="button" text="Red">
