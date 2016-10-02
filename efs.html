@@ -15,52 +15,47 @@
       <p id="hacky_fix">Data:</p>
     </div>
   </div>
-  
 
+  <div id="wrapper">
+    <div id='container' >    
+      <div id="detector" onmousedown="drag=true;">
+        <div id="draggable" >
+          <div class="detectorbox" id="first"></div>
+          <div class="detectorbox"></div>
+          <div class="detectorbox" id="final"></div>
+        </div>
+      </div>
+      <canvas id="echelle" height=900px width=600px></canvas>
+    </div>
 
+    <div id="ui" >
+      <canvas id="spectra-gif" class="data"  width=660px height=474px></canvas>
+      <br>
 
+      <div id="info" class="interface">
+        
+        <span id="Wavelength" class="data">Lambda:</span>
+        <br> 
+        <span id="OrderNum" class="data">Order:</span>
+        <br>
+        <span id="EchelleAngle" class="data">Echelle Angle:</span>
+        <br>
+        <span id="CrossDisperserAngle" class="data">Cross Disperser Angle:</span>
+        <br>
+      </div>
 
-  <!-- <div id='container' >    
-    <div id="detector" onmousedown="drag=true;">
-      <div id="draggable" >
-        <div class="detectorbox" id="first"></div>
-        <div class="detectorbox"></div>
-        <div class="detectorbox" id="final"></div>
+      <div id="input" class="interface">
+        <span id="FindLambda" class="data">Locate Wavelength: <input type="text" id="lambdainput" onchange="findLambdaLocation()"/></span>
+        <br>
+        <span id="toggle" class="data" value="red">
+          <p>Zoom:</p><input type="range" id="zoom" min="4" max="14" value="9" onchange="update()"/>
+          <input id="toggleColorRed" onClick="tog('red')" type="button" text="Red">
+          <input id="toggleColorBlue" onClick="tog('blue')" type="button" text="Blue">
+        </span>
       </div>
     </div>
-    <canvas id="echelle" height=900px width=600px></canvas>
   </div>
 
-  <canvas id="spectra-gif" class="data"  width=660px height=474px></canvas> -->
-
-  
-
-  <div id="ui" >
-
-    <div id="info" class="interface">
-      
-      <span id="Wavelength" class="data">Lambda:</span>
-      <br> 
-      <span id="OrderNum" class="data">Order:</span>
-      <br>
-      <span id="EchelleAngle" class="data">Echelle Angle:</span>
-      <br>
-      <span id="CrossDisperserAngle" class="data">Cross Disperser Angle:</span>
-      <br>
-    </div>
-
-    <div id="input" class="interface">
-      <span id="FindLambda" class="data">Locate Wavelength: <input type="text" id="lambdainput" onchange="findLambdaLocation()"/></span>
-      <br>
-      <span id="toggle" class="data" value="red">
-        <p>Zoom:</p><input type="range" id="zoom" min="4" max="14" value="9" onchange="update()"/>
-        <input id="toggleColorRed" onClick="tog('red')" type="button" text="Red">
-        <input id="toggleColorBlue" onClick="tog('blue')" type="button" text="Blue">
-      </span>
-      
-    </div>
-
-  </div>
 </div>
 <script type="text/javascript" src="efs.js"></script>
 

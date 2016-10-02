@@ -5,7 +5,7 @@ body {
   padding: 0px;
   /*height: 100%;*/
   width: 100%;
-  background-color: #79e0d6;
+  background-color: #262626;
 }
 #spectra-gif {
   border: 1px solid black;
@@ -40,7 +40,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: white;
   font-size: 25px;
-  padding-left: 5%;
+  padding-left: 9.5%;
   
 }
 
@@ -52,11 +52,11 @@ body {
   font-family: 'Quicksand', sans-serif;
   color: white;
   font-size: 20px;
-  padding-left: 5.5%;
+  padding-left: 9.5%;
   border-top: 3px dashed  #eae3a6;
   line-height: 90px;  
   font-style: italic;
-  margin-bottom: 5%;
+ /* margin-bottom: 5%;*/
   width: 100%;
 }
 
@@ -77,27 +77,21 @@ body {
   margin-left: 60%;
 }
 
-.data2 {
-  font-family: 'Quicksand', sans-serif;
-  color: white;
-  padding: 10px;
-  background-color: #4c4c4c;
-  display: block;
-  -webkit-box-shadow: 0.5px 0.5px 0.5px 0.5px #000000;
-    box-shadow: 0.5px 0.5px 0.5px 0.5px #000000;
-  padding-top: 15px;
-  padding-left: 20px;
-  padding-right: 50px;
-  padding-bottom: 15px;
-  width: 25%;
-  margin-left: 60%;
+
+#wrapper {
+  width: 100%;
+  overflow: hidden;
 }
 
 #ui {
   
-  /*position: relative;
-  padding-top: 10px;*/
 }
+
+#container {
+  float: left;
+  width: 50%;
+  height: 900px;
+  }
 
 
 .interface {
@@ -105,6 +99,8 @@ body {
   padding-right: 20px;
   width: 300px*/
 }
+
+
 .button {
   display: block;
   height: 30px;
@@ -160,11 +156,7 @@ body {
   background-color: #042262;
   display: inline;
 }
-#container {
-  float: left;
-  width: 600px;
-  height: 900px;
-  }
+
 #detector {
   position: absolute;
   background-color: #e0eeee;
