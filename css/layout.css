@@ -5,32 +5,59 @@ body {
   padding: 0px;
   /*height: 100%;*/
   width: 100%;
-  background-color: #ff4646;
+  background-color: #79e0d6;
 }
 #spectra-gif {
   border: 1px solid black;
 }
-#header { 
-  margin-top: 3%;
-  line-height: 27px;
-  display: inline-block;
-  width: 100%
+
+#center {
+  width: 60%;
+  padding-top: 4%;
+  display: block;
   margin: 0 auto;
 }
 
+#header { 
+  line-height: 27px;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+
+}
+
 #title {
-  font-family: 'Open Sans', sans-serif;
+  padding-top: 2%;
+  font-family: 'Quicksand', sans-serif;
   font-style: 300;
   color: white;
-  font-size: 75px;
+  font-size: 500%;
   margin: 0 auto;
+  text-align: center;
 }
 
 #keck {
   font-family: 'Open Sans', sans-serif;
-  font-style: italic;
   color: white;
   font-size: 25px;
+  padding-left: 5%;
+  
+}
+
+#hacky_fix2 {
+  width: 94.8%;
+}
+
+#hacky_fix {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-size: 20px;
+  padding-left: 5.5%;
+  border-top: 3px dashed  #eae3a6;
+  line-height: 90px;  
+  font-style: italic;
+  margin-bottom: 5%;
+  width: 100%;
 }
 
 
@@ -40,19 +67,43 @@ body {
   padding: 10px;
   background-color: white;
   display: block;
-  -webkit-box-shadow: 1px 1px 1px 1px #404040;
-    box-shadow: 1px 1px 1px 1px #404040;
+  -webkit-box-shadow: 0.5px 0.5px 0.5px 0.5px #404040;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px #404040;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 50px;
+  padding-bottom: 15px;
+  width: 25%;
+  margin-left: 60%;
+}
+
+.data2 {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  padding: 10px;
+  background-color: #4c4c4c;
+  display: block;
+  -webkit-box-shadow: 0.5px 0.5px 0.5px 0.5px #000000;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px #000000;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 50px;
+  padding-bottom: 15px;
+  width: 25%;
+  margin-left: 60%;
 }
 
 #ui {
-  /*float: left;*/
-  position: relative;
-  padding-top: 10px;
+  
+  /*position: relative;
+  padding-top: 10px;*/
 }
+
+
 .interface {
-  float: left;
+  /*float: left;
   padding-right: 20px;
-  width: 300px
+  width: 300px*/
 }
 .button {
   display: block;
