@@ -17,19 +17,23 @@ body {
   float: left;*/
  /* position: relative;
   padding-top: 10px;*/
-  width: 50%;
-  height: 100%;
   float: right;
+  width: 50%;
+  height: 100vh;
   display: inline-block;
 }
 
+#graph {
+  
+}
 #container {
   /*float: left;*/
   /*float: left;
   display: inline-block;
   width: 600px;
   height: 900px;*/
-  height: 100%;
+  padding-top: 20%;
+  height: 100vh;
   width: 50%;
   display: inline-block;
 }
@@ -74,14 +78,14 @@ body {
 
 
 #spectra-gif {
-  margin: 0 auto;
+  /*margin: 0 auto;*/
  /* border: 1px solid black;*/
 }
 
 
 .data {
   font-family: 'Quicksand', sans-serif;
-  color: #4c4c4c;
+  color: black;
   padding: 10px;
   background-color: white;
   display: block;
@@ -95,15 +99,19 @@ body {
   padding-right: 50px;
   padding-bottom: 15px;
   width: 80%;
-
+  opacity: 0.8;
 }
+
+.zoom {
+  padding-top: 0.2px !important;
+}
+
 
 #clear {
   clear: both;
 }
 
 #ui-top {
-  padding-top: 7%;
 }
 
 #ui-bottom {

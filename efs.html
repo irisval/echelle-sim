@@ -8,15 +8,11 @@
 <body>
 
 <div id="full">
-  <div id="header">
-      <p id="title">Echelle Format Simulator</p>
-      <img id="logo" src="css/keck-logo-small.png">
-      <p id="keck">Keck Observatory</p>
-  </div>
 
 
   <div id="content">
-    <div id='container' >    
+    <div id='container' > 
+       
       <div id="detector" onmousedown="drag=true;">
         <div id="draggable" >
           <div class="detectorbox" id="first"></div>
@@ -24,13 +20,22 @@
           <div class="detectorbox" id="final"></div>
         </div>
       </div>
+
+      <div id="graph">
       <canvas id="echelle" height=900px width=600px></canvas>
+      </div>
 
     </div>
 
     
 
     <div id="ui" >
+    <div id="header">
+      <p id="title">Echelle Format Simulator</p>
+      <img id="logo" src="css/keck-logo-small.png">
+      <p id="keck">Keck Observatory</p>
+    </div>
+
      
      <div id="ui-top"> 
       <canvas id="spectra-gif" class="data"  width=660px height=474px></canvas>
@@ -40,23 +45,26 @@
 
       <div id="ui-bottom">
       <div id="info" class="interface d1">
+        
         <div id="OrderNum" class="data">Order:</div>
-        <br>
-        <div id="Wavelength" class="data">Lambda:</div>
         <br>
         <!-- <div class="data"></div> -->
         
-        <div id="EchelleAngle" class="data">Echelle Angle:</div>
-        <br>
+        
         <div id="CrossDisperserAngle" class="data">Cross Disperser Angle:</div>
         <br>
+        <div id="EchelleAngle" class="data">Echelle Angle:</div>
+        <br>
+        <div id="Wavelength" class="data">Lambda:</div>
+        <br>
+        
       </div>
 
       <div id="input" class="interface d2">
-        
-        <span id="FindLambda" class="data">Locate Wavelength: <input type="text" id="lambdainput" onchange="findLambdaLocation()"/></span>
+      <span id="FindLambda" class="data locwave">Locate Wavelength: <input type="text" id="lambdainput" onchange="findLambdaLocation()"/></span>
         <br>
-        <span id="toggle" class="data" value="red">
+      
+        <span id="toggle" class="data zoom" value="red">
         <p>Zoom: </p>
           <input type="range" id="zoom" min="4" max="14" value="9" onchange="update()"/>
           <input id="toggleColorRed" onClick="tog('red')" type="button" text="Red">
@@ -66,7 +74,6 @@
     <!--   <div id="clear"></div> -->
         </div>
       </div>
-  
   </div>
 
 </div>
